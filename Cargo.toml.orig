@@ -1,35 +1,3 @@
-[package]
-name = "protobuf-codegen"
-version = "2.22.1"
-authors = ["Stepan Koltsov <stepan.koltsov@gmail.com>"]
-license = "MIT"
-homepage = "https://github.com/stepancheg/rust-protobuf/"
-repository = "https://github.com/stepancheg/rust-protobuf/"
-description = """
-Code generator for rust-protobuf.
-
-Includes a library and `protoc-gen-rust` binary.
-
-See `protoc-rust` and `protobuf-codegen-pure` crates.
-"""
-
-[lib]
-bench = false
-
-[dependencies]
-protobuf = { path = "../protobuf", version = "=2.22.1" }
-
-[[bin]]
-
-name = "protoc-gen-rust"
-path = "src/bin/protoc-gen-rust.rs"
-test = false
-
-[[bin]]
-
-name = "protobuf-bin-gen-rust-do-not-use"
-path = "src/bin/protobuf-bin-gen-rust-do-not-use.rs"
-test = false
-
-[package.metadata.docs.rs]
-all-features = true
+version https://git-lfs.github.com/spec/v1
+oid sha256:d279c4bd9d6b52543ba70133f6e14238ecf63bbac2dd31bccf95d9fc1367dfe2
+size 750

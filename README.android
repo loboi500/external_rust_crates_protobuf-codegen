@@ -1,15 +1,3 @@
-Since we do not run build.rs during an Android build,
-we need to set up the version number in src/lib.rs
-until we have a smarter way to patch it based on new
-version number in Cargo.toml.
-
-To update this package, please make sure that the following code
-in src/lib.rs is up to data.
-
-        // Hack: hard code version number here because Android.bp
-        // rust modules cannot pass it though env variable yet.
-        w.write_generated_by("rust-protobuf", "2.16.2");
-
-If there are non-trivial changes in build.rs or src/lib.rs,
-please rerun cargo2android.py and verify the differences in
-Android.bp and src/lib.rs.
+version https://git-lfs.github.com/spec/v1
+oid sha256:12d15862f2170b41b11d3d0c787515453a98cb9e506dd5b847bb49a0399fb6ed
+size 619
